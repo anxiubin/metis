@@ -178,18 +178,6 @@ header .main-menu li a:hover {
     width: 15%;
 }
 
-/* background image, icon*/
-
-.vision-image {
-    width: 100%;
-    height: 880px;
-    background: url("../img/con3.jpg") bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 500px;
-}
-
-
 /* INTRO */
 
 .section--intro {
@@ -252,107 +240,94 @@ header .main-menu li a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+    border: none;
 }
 
 /* FEATURE */
 .section--feature {
-    background: #f5f5f5;
-    padding-top: 66px;
+    background: #fff;
+    position: relative;
+    padding-top: 90px;
 }
 
 .section--feature .summary {
-    max-width: 820px;
+    max-width: 980px;
     margin: 0 auto;
     text-align: center;
 }
 
 .summary__title {
-    color: #ff5420;
+    color: #313171;
     font-size: 40px;
-    font-weight: 700;
+    display: inline-block;
+    font-weight: bold;
+    width: 270px;
+    padding: 10px;
+    font-family: Roboto;
+    border-top: solid 5px #F5A919;
 }
 
-.section--feature .video {
-    max-width: 650px;
-    margin: 50px auto;
+.summary__content {
+    text-align: center;
+    font-family: KoPubWorldDotum;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 83.5%;
+    margin-top: 30px;
 }
 
-.section--feature .video .video-ratio {
-    height: 0;
-    padding-top: 56.25%;
-    position: relative;
+.about-img {
+    width: 798px;
+    height: 568px;
+    margin-top: 75px;
 }
 
-.section--feature .video .video-ratio iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-.section--feature .tiles {
-    min-height: 550px;
-}
+/* Service */
 
-.section--feature .tiles .inner {
-    max-width: 1200px;
-}
-
-.section--feature .tiles li {
-    width: 50%;
-    float: left;
-    line-height: 1.5;
-    box-sizing: border-box;
-}
-
-.circle {
-    width: 170px;
-    height: 170px;
-    border-radius: 70%;
-    overflow: hidden;
+.section--service {
     display: flex;
-    float: left;
-    transform: translate(-30px, -10px);
-}
-
-.feature-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.feature-text {
-    display: flex;
+    padding-top: 110px;
     flex-direction: column;
-    justify-content: center;
-    margin-right: 7%;
+    align-items: center;
+    height: 1085px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FF9852 0%, #FFFBF0 81.25%);
 }
 
-.tile-wrap {
-    border: 6px solid #ffcfc5;
-    border-radius: 300px;
-    margin: 10px 10%;
-    height: 150px;
-    display: flex;
+.mypool-logo {
+    width: 499px;
+    height: 114px;
+    margin-bottom: 30px;
 }
 
-.tile-wrap h2 {
-    color: #ff531f;
-    font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 10px;
+.mypool-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.tile-wrap p {
-    color: #767676;
+.mypool-details {
+    width: 180.27px;
+    height: 47.16px;
+    background: #313171;
+    border-radius: 18.9165px;
+    font-family: Pragati Narrow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22.6998px;
+    line-height: 38px;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
-.section--feature .tiles li img {
-    max-width: 100%;
+.appBtn-group img {
+    margin: 20px;
 }
-
-
 
 /* VISION */
 
@@ -425,12 +400,6 @@ header .main-menu li a:hover {
     max-width: 820px;
     margin: 100px auto;
     text-align: center;
-}
-
-.summary__title {
-    color: #ff5420;
-    font-size: 40px;
-    font-weight: 700;
 }
 
 .details-group {
