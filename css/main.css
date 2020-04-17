@@ -183,7 +183,7 @@ header .main-menu li a:hover {
 .vision-image {
     width: 100%;
     height: 880px;
-    background: url(/img/con3.jpg) bottom center;
+    background: url("../img/con3.jpg") bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 500px;
@@ -193,7 +193,7 @@ header .main-menu li a:hover {
 /* INTRO */
 
 .section--intro {
-    background: url(/img-src/title_background.png);
+    background: url("../img-src/title_background.png");
     background-repeat: no-repeat;
     max-width: 1920px;
     height: 986.78px;
