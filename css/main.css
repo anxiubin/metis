@@ -71,16 +71,6 @@ header .menu-group {
     width: 60vw;
 }
 
-header .logo {}
-
-header .logo a {
-    background: url("../img-src/metis_logo.svg");
-    width: 262px;
-    height: 85px;
-    display: block;
-    text-indent: -9999px;
-}
-
 header .main-menu {
     display: flex;
 }
@@ -89,7 +79,7 @@ header .main-menu li a {
     padding: 0.8vw;
     display: block;
     font-size: 20px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     line-height: 28px;
@@ -130,15 +120,82 @@ header .main-menu li a:hover {
     text-indent: -9999px;
 }
 
+/* HEADER FC*/
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 5.5rem;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.header .logo a {
+    background: url("../img-src/metis_logo_small.svg");
+    width: 200px;
+    height: 65px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.nav-menu {
+    flex-direction: row;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+    padding: 0 0.3rem;
+}
+
+.nav-menu li a {
+    position: relative;
+    padding: 0 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    color: #777070;
+}
+
+.nav-menu li a:hover {
+    color: #ff5420;
+}
+
+.header-nav .btn-group {
+    display: flex;
+}
+
 /* BTN */
 .btn {
     display: flex;
     align-items: center;
     height: 34px;
     padding: 0 10px;
+    margin: 0 5px;
     border-radius: 18.9165px;
     font-size: 15px;
-    font-family: Pragati Narrow;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     color: #6b6b6b;
@@ -158,6 +215,7 @@ header .main-menu li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 18.9165px;
     background: rgba(0, 0, 0, 0.07);
 }
 
@@ -192,7 +250,6 @@ header .main-menu li a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 100px;
 }
 
 .intro-box {
@@ -233,7 +290,7 @@ header .main-menu li a:hover {
     height: 70.42px;
     background: #FF8510;
     border-radius: 10px;
-    font-family: Pragati Narrow;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 22.6998px;
@@ -250,7 +307,7 @@ header .main-menu li a:hover {
 .section--feature {
     background: #fff;
     position: relative;
-    padding-top: 90px;
+    padding-top: 110px;
 }
 
 .section--feature .summary {
@@ -266,7 +323,7 @@ header .main-menu li a:hover {
     font-weight: bold;
     width: 270px;
     padding: 10px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     border-top: solid 5px #F5A919;
 }
 
@@ -305,7 +362,7 @@ header .main-menu li a:hover {
 }
 
 .mypool-text {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -318,7 +375,7 @@ header .main-menu li a:hover {
     width: 190px;
     background: #313171;
     border-radius: 18.9165px;
-    font-family: Pragati Narrow;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 22.6998px;
