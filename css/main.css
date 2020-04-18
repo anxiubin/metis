@@ -1,6 +1,6 @@
 /* COMMON */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 @import url('../assets/css/KoPubDotum.css');
 
 html {
@@ -18,6 +18,48 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
+
+.section--vision .tiles .inner {
+    max-width: 980px;
+    margin: 10px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.summary {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.summary__title {
+    color: #313171;
+    font-size: 40px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-top: solid 5px #F5A919;
+    width: 250px;
+}
+
+.summary__content {
+    text-align: center;
+    font-family: 'KoPub Dotum';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 83.5%;
+    margin-top: 30px;
+}
+
+
+
 /* FLOAT CLEARFIX */
 .clearfix::after {
     content: "";
@@ -25,88 +67,6 @@ a {
     display: block;
 }
 
-.float--left {
-    float: left;
-}
-
-.float--right {
-    float: right;
-}
-
-/* SECTION & INNER*/
-/* .section {
-    position: relative;
-} */
-
-.section .inner {
-    max-width: 980px;
-    margin: 10px auto;
-    position: relative;
-    box-sizing: border-box;
-}
-
-/* HEADER */
-header {
-    background: #fff;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-header .inner {
-    height: 85px;
-    margin: 0 40px;
-    position: relative;
-    box-sizing: border-box;
-}
-
-/* Menu group(Left) */
-header .menu-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    margin: 20px 0;
-    width: 60vw;
-}
-
-header .main-menu {
-    display: flex;
-}
-
-header .main-menu li a {
-    padding: 0.8vw;
-    display: block;
-    font-size: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 28px;
-    color: #777070;
-
-}
-
-header .main-menu li a:hover {
-    color: #ff5420;
-}
-
-/* Right-group(Right) */
-.header-right-group {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 20px 0;
-    transform: translateX(5px);
-}
-
-.header-right-group .btn-group {
-    display: flex;
-}
-
-.header-right-group .btn-group .paper {
-    margin-right: 4px;
-}
 
 #toggle-btn {
     display: none;
@@ -116,11 +76,10 @@ header .main-menu li a:hover {
     position: absolute;
     top: 16px;
     right: 20px;
-    cursor: pointer;
     text-indent: -9999px;
 }
 
-/* HEADER FC*/
+/* HEADER */
 
 .header {
     position: sticky;
@@ -171,7 +130,7 @@ header .main-menu li a:hover {
 .nav-menu li a {
     position: relative;
     padding: 0 1rem;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 28px;
@@ -195,7 +154,7 @@ header .main-menu li a:hover {
     margin: 0 5px;
     border-radius: 18.9165px;
     font-size: 15px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     color: #6b6b6b;
@@ -203,7 +162,6 @@ header .main-menu li a:hover {
     line-height: 1.5;
     text-align: center;
     background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
-    cursor: pointer;
     box-sizing: border-box;
     position: relative;
 }
@@ -290,7 +248,7 @@ header .main-menu li a:hover {
     height: 70.42px;
     background: #FF8510;
     border-radius: 10px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22.6998px;
@@ -308,33 +266,6 @@ header .main-menu li a:hover {
     background: #fff;
     position: relative;
     padding-top: 110px;
-}
-
-.section--feature .summary {
-    max-width: 980px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.summary__title {
-    color: #313171;
-    font-size: 40px;
-    display: inline-block;
-    font-weight: bold;
-    width: 270px;
-    padding: 10px;
-    font-family: 'Roboto';
-    border-top: solid 5px #F5A919;
-}
-
-.summary__content {
-    text-align: center;
-    font-family: 'KoPub Dotum';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 22px;
-    line-height: 83.5%;
-    margin-top: 30px;
 }
 
 .about-img {
@@ -362,20 +293,20 @@ header .main-menu li a:hover {
 }
 
 .mypool-text {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'KoPub Dotum';
     font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
+    font-style: normal;
+    font-size: 22px;
     text-align: center;
     margin-bottom: 30px;
+    line-height: 83.5%;
 }
 
 .mypool-details {
     width: 190px;
     background: #313171;
     border-radius: 18.9165px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22.6998px;
@@ -387,9 +318,12 @@ header .main-menu li a:hover {
     margin-bottom: 30px;
 }
 
-.appBtn-group img {
+.appBtn-group button {
+    border: none;
     margin: 20px;
 }
+
+.appBtn-group img {}
 
 /* VISION */
 
@@ -593,7 +527,7 @@ header .main-menu li a:hover {
 
 
 .content_box {
-    width: 1100px;
+    width: 1024px;
     margin: auto;
 }
 
@@ -611,7 +545,7 @@ header .main-menu li a:hover {
 }
 
 .pr_list_box li {
-    width: 300px;
+    width: 250px;
     float: left;
     margin-bottom: 80px;
 }
@@ -680,6 +614,88 @@ header .main-menu li a:hover {
     margin-top: 118px;
 }
 
+
+
+/* PARTNER */
+
+.section--partner {
+    width: 100%;
+    height: 400px;
+    background: #FFFBF0;
+}
+
+.section--partner .summary {
+    padding-top: 100px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-logos img {
+    margin: 20px;
+}
+
+
+
+/* NEWS SWIPTER */
+
+.section--news .summary {
+    padding: 100px 0 50px 0;
+}
+
+.swiper-container {
+    max-width: 1024px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 400px;
+}
+
+.swiper-slide p {
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+
+.swiper-button-next {
+    right: 0px;
+    color: #787878;
+}
+
+.swiper-button-prev {
+    left: 0px;
+    color: #787878;
+}
 
 
 /* FOOTER */

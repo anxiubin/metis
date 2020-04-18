@@ -9,6 +9,8 @@
     <title>Metis Homepage</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="all and (max-width: 1024px)" href="css/main_medium.css">
     <link rel="stylesheet" media="all and (max-width: 768px)" href="css/main_small.css">
@@ -21,41 +23,6 @@
     <div class="body-container">
 
         <!-- HEADER -->
-        <!-- <header>
-            <div class="inner clearfix">
-
-                <div class="menu-group float--left">
-                    <div class="logo">
-                        <a href="#">Metis</a>
-                    </div>
-                    <ul class="main-menu toggle">
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Service">Service</a></li>
-                        <li><a href="#Roadmap">Roadmap</a></li>
-                        <li><a href="#Team">Team</a></li>
-                        <li><a href="#Partner">Partner</a></li>
-                        <li><a href="#News">News</a></li>
-                    </ul>
-                </div>
-
-                <div class="header-right-group float--right toggle">
-                    <div class="btn-group">
-                        <a href="#" class="btn btn--primary paper">white paper</a>
-                        <a href="#" class="btn lang">
-                            <img src="img/en_icon.png" class="nation" alt="English" title="English">
-                            eng
-                            <img src="img/arrow_b_icon.png" class="arrow" alt="arrow_bottom" title="arrow_bottom">
-                        </a>
-                    </div>
-                </div>
-
-                <div id="toggle-btn">Header Menu Toggle Button</div>
-
-            </div>
-        </header> -->
-
-
-        <!-- HEADER FC -->
         <header class="header">
             <div class="header-inner">
                 <div class="logo">
@@ -85,7 +52,7 @@
 
 
         <!-- INTRO -->
-        <div class="section section--intro">
+        <div class="section--intro">
             <div class="intro-box">
                 <div class="intro-img"></div>
                 <div class="intro-text">
@@ -98,7 +65,7 @@
         </div>
 
         <!-- feature -->
-        <section class="section section--feature" id="About">
+        <section class="section--feature" id="About">
 
             <div class="summary">
                 <h2 class="summary__title">About Metis</h2>
@@ -114,7 +81,7 @@
 
         </section>
 
-        <section class="section section--service" id="Service">
+        <section class="section--service" id="Service">
             <div class="mypool-logo">
                 <img src="img-src/mypool_logo.svg" alt="mypool">
             </div>
@@ -128,17 +95,20 @@
                 <img src="img-src/iphone_login.svg" alt="app-login">
                 <img src="img-src/iphone_home.svg" alt="app-home">
                 <img src="img-src/iphone_content.svg" alt="app-content">
-                <img src="img-src/iphone_user.svg" alt="app-user">
             </div>
             <div class="appBtn-group">
-                <img src="img-src/googleplay.svg" alt="googleplay">
-                <img src="img-src/appstore.svg" alt="appstore">
+                <button>
+                    <img src="img-src/googleplay.png" alt="googleplay">
+                </button>
+                <button>
+                    <img src="img-src/appstore.png" alt="appstore">
+                </button>
             </div>
         </section>
 
         <!-- VISION -->
 
-        <section class="section section--vision">
+        <section class="section--vision">
 
             <div class="tiles">
                 <div class="inner">
@@ -214,7 +184,7 @@
 
 
         <!-- TOKEN -->
-        <section class="section section--token" id="INFO">
+        <section class="section--token" id="INFO">
             <div class="summary">
                 <h2 class="summary__title">MPM TOKEN</h2>
             </div>
@@ -236,7 +206,7 @@
 
 
         <!-- ROADMAP -->
-        <section class="section section--roadmap" id="ROADMAP">
+        <section class="section--roadmap" id="ROADMAP">
             <div class="summary">
                 <h2 class="summary__title">ROADMAP</h2>
             </div>
@@ -475,18 +445,70 @@
 
         <!-- PARTNER -->
 
-        <section class="section section--partner" id="Partner">
+        <section class="section--partner" id="Partner">
 
             <div class="summary">
                 <h2 class="summary__title">Partner</h2>
-                <p class="summary__content">
-                    메티스는 블록체인 기반 에듀테크 플랫폼입니다. <br><br>
-                    E-Learning을 뛰어 넘어 인공지능과 장기기억 학습 프로세스를 도입한 마이풀을 서비스하고 있으며, <br><br>
-                    전 세계 사람들은 언제 어디에서나 MTS 토큰으로 서비스를 구독하고 학습 리워드를 받을 수 있습니다. <br>
-                </p>
-                <div class="about-img">
-                    <img src="img-src/About.svg" alt="about">
+                <div class="partner-logos">
+                    <img src="img-src/metis_logo_small.svg" alt="metis">
+                    <img src="img-src/saltlux_logo.svg" alt="saltlux">
+                    <img src="img-src/symverse_logo.svg" alt="symverse">
+                    <img src="img-src/liveen_logo.svg" alt="liveen">
                 </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWS Swiper -->
+
+        <section class="section--news" id="News">
+            <div class="summary">
+                <h2 class="summary__title">News</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img-src/news.png" alt="news">
+                        <p>
+                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img-src/news.png" alt="news">
+                        <p>
+                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img-src/news.png" alt="news">
+                        <p>
+                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img-src/news.png" alt="news">
+                        <p>
+                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img-src/news.png" alt="news">
+                        <p>
+                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img-src/news.png" alt="news">
+                        <p>
+                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
+                        </p>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
         </section>
@@ -513,6 +535,7 @@
         <a href="/" class="footer_logo"><img src="img/footer_logo.png" alt="footer_logo"></a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@5.3.7/js/swiper.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 
