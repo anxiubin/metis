@@ -15,7 +15,9 @@
     <link rel="stylesheet" media="all and (max-width: 1024px)" href="css/main_medium.css">
     <link rel="stylesheet" media="all and (max-width: 768px)" href="css/main_small.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.0/Chart.min.js"></script>
 </head>
 
@@ -78,6 +80,8 @@
                     <img src="img-src/About.svg" alt="about">
                 </div>
             </div>
+
+
 
         </section>
 
@@ -166,101 +170,63 @@
             </div>
         </section>
 
-        <!-- VISION -->
-
-        <section class="section--vision">
-
-            <div class="tiles">
-                <div class="inner">
-
-                    <ul>
-                        <li>
-                            <div class="vision-tile-wrap">
-                                <img src="img/vision_icon.png" class="vision-icon" alt="vision">
-                                <div class="vision-text">
-                                    <h2>SMART LEARNING</h2>
-                                    <p>Process of long-term memory transition Lecture-Exercise-Speaking practice at
-                                        once!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="vision-tile-wrap">
-                                <img src="img/vision_icon.png" class="vision-icon" alt="vision">
-                                <div class="vision-text">
-                                    <h2>SMART LEARNING</h2>
-                                    <p>Process of long-term memory transition Lecture-Exercise-Speaking practice at
-                                        once!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="vision-tile-wrap">
-                                <img src="img/vision_icon.png" class="vision-icon" alt="vision">
-                                <div class="vision-text">
-                                    <h2>SMART LEARNING</h2>
-                                    <p>Process of long-term memory transition Lecture-Exercise-Speaking practice at
-                                        once!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="vision-tile-wrap">
-                                <img src="img/vision_icon.png" class="vision-icon" alt="vision">
-                                <div class="vision-text">
-                                    <h2>SMART LEARNING</h2>
-                                    <p>Process of long-term memory transition Lecture-Exercise-Speaking practice at
-                                        once!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="vision-tile-wrap">
-                                <img src="img/vision_icon.png" class="vision-icon" alt="vision">
-                                <div class="vision-text">
-                                    <h2>SMART LEARNING</h2>
-                                    <p>Process of long-term memory transition Lecture-Exercise-Speaking practice at
-                                        once!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="vision-tile-wrap">
-                                <img src="img/vision_icon.png" class="vision-icon" alt="vision">
-                                <div class="vision-text">
-                                    <h2>SMART LEARNING</h2>
-                                    <p>Process of long-term memory transition Lecture-Exercise-Speaking practice at
-                                        once!</p>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
-
-        </section>
 
 
         <!-- TOKEN -->
+
         <section class="section--token" id="INFO">
             <div class="summary">
-                <h2 class="summary__title">MPM TOKEN</h2>
+                <h2 class="summary__title">Metis Token (MTS)</h2>
             </div>
 
             <div class="details-group">
                 <div class="chartBox">
-                    <div id="chart"></div>
+                    <div id="chartdiv"></div>
                 </div>
 
-                <div class="token-details">
-                    <h2>Total issue 100 million</h2>
-                    <h2>Reward for learning 20%</h2>
-                    <h2>SI 5%</h2>
-                    <h2>Company owned 75%</h2>
+                <div class="section-token-distribution">
+                    <div class="token-details">
+                        <div class="distribution-barchart barchart-token-generation">
+                          <span class="chart-lable">Sale</span>
+                          <span class="chart-amount">35%</span>
+                          <div class="chart-bar"></div>
+                        </div>
+                        <div class="distribution-barchart barchart-Ecosystem">
+                          <span class="chart-lable">Ecosystem</span>
+                          <span class="chart-amount">20%</span>
+                          <div class="chart-bar"></div>
+                        </div>
+                        <div class="distribution-barchart barchart-Marketing">
+                          <span class="chart-lable">Marketing</span>
+                          <span class="chart-amount">10%</span>
+                          <div class="chart-bar"></div>
+                        </div>
+                        <div class="distribution-barchart barchart-Reserve">
+                          <span class="chart-lable">Reserve</span>
+                          <span class="chart-amount">7%</span>
+                          <div class="chart-bar"></div>
+                        </div>
+                        <div class="distribution-barchart barchart-Partner">
+                          <span class="chart-lable">Partner</span>
+                          <span class="chart-amount">8%</span>
+                          <div class="chart-bar"></div>
+                        </div>
+                        <div class="distribution-barchart barchart-Adviser">
+                          <span class="chart-lable">Adviser</span>
+                          <span class="chart-amount">3%</span>
+                          <div class="chart-bar"></div>
+                        </div>
+                        <div class="distribution-barchart barchart-Team">
+                            <span class="chart-lable">Team</span>
+                            <span class="chart-amount">17%</span>
+                            <div class="chart-bar"></div>
+                          </div>
+                      </div>
                 </div>
+
+                
             </div>
+            <div class="hiddenbox"></div>
 
         </section>
 
