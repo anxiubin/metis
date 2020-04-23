@@ -96,6 +96,7 @@ function printGraph() {
 //scroll event
 
 const chartBoxEl = document.querySelector('.chartBox');
+const scrolltopBtn = document.querySelector('.scrolltop');
 let checkNum = 0;
 
 function scrollView() { 
@@ -104,7 +105,7 @@ function scrollView() {
     const isHalfShown = chartIntAt > chartBoxEl.offsetTop; 
     const isNotScrolledPast = window.scrollY < chartBottom; 
 
-
+    // view chart
     if (isHalfShown && isNotScrolledPast) { 
         checkNum += 1;
         if (checkNum === 1) {
@@ -112,7 +113,14 @@ function scrollView() {
         }
     }
 
-    console.log('scrolled', isHalfShown, isNotScrolledPast);
+    // view scroll button
+    if(window.scrollY !== 0) {
+        scrolltopBtn.classList.add('show');
+    } else {
+        scrolltopBtn.classList.remove('show');
+    }
+
+    console.log('scrolled', isHalfShown, isNotScrolledPast, window.scrollY);
 }
 
 

@@ -145,7 +145,28 @@ button {
     display: flex;
 }
 
+
+
 /* BTN */
+
+
+.scrolltop {
+    position: fixed;
+    opacity: 0;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    color: #313171;
+}
+
+.scrolltop img {
+    width: 60px;
+}
+
+.show {
+    opacity: 1;
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -694,7 +715,6 @@ button {
 
 .st15_box {
     overflow: hidden;
-    background: #fafafa;
     padding-top: 100px;
     max-width: 980px;
     margin: 0 auto;
@@ -889,4 +909,5 @@ button {
 
 .footer-community ul {
     display: flex;
+    margin-top: 10px;
 }
