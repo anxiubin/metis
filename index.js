@@ -61,7 +61,7 @@ function printGraph() {
     pieSeries.tooltip.label.fill = am4core.color("#FFF");
     pieSeries.slices.template.strokeWidth = 2;
     pieSeries.slices.template.strokeOpacity = 1;
-    pieSeries.defaultState.transitionDuration = 2000;
+    pieSeries.defaultState.transitionDuration = 1000;
     // This creates initial animation
     pieSeries.hiddenState.properties.opacity = 1;
     pieSeries.hiddenState.properties.endAngle = -90;
@@ -106,16 +106,11 @@ function scrollView() {
 
 
     if (isHalfShown && isNotScrolledPast) { 
-        chartBoxEl.classList.add('show');
         checkNum += 1;
-        console.log(checkNum);
         if (checkNum === 1) {
             am4core.ready(printGraph); 
         }
-
-        } else { 
-            chartBoxEl.classList.remove('show');
-        }
+    }
 
     console.log('scrolled', isHalfShown, isNotScrolledPast);
 }
@@ -139,7 +134,7 @@ window.addEventListener('scroll', throttle(scrollView, 500));
 
 
 
-// swiper
+// News swiper
 
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 2,
