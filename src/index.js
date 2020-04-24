@@ -1,4 +1,29 @@
-//TOKEN CHART 
+import {news} from './news.js';
+
+
+//change language
+
+const chooseBtn = document.querySelector('.header-btn.lang');
+const langList = document.querySelector('.lang-list');
+
+function showLangList() {
+    if(langList.classList.contains('show')) {
+        langList.classList.remove('show');
+    } else {
+        langList.classList.add('show');
+    }
+}
+
+function changeLang() {
+    chooseBtn.innerText = event.target.innerText;
+    langList.classList.remove('show');
+}
+
+langList.addEventListener('click', changeLang);
+chooseBtn.addEventListener('click', showLangList);
+
+
+//make token chart
 
   
 function printGraph() {
@@ -93,6 +118,7 @@ function printGraph() {
 
 }
 
+
 //scroll event
 
 const chartBoxEl = document.querySelector('.chartBox');
@@ -156,7 +182,8 @@ const swiper = new Swiper('.swiper-container', {
         swiper.changeDirection(getDirection());
       }
     }
-  });
+});
+
 
 function getDirection() {
     // var windowWidth = window.innerWidth;
@@ -166,5 +193,32 @@ function getDirection() {
     return direction;
 }
 
+
+function getNews() {
+
+    for(let i = 0; i < news.length; i++) {
+        const slideEl = document.createElement('div');
+        const linkEl = document.createElement('a');
+        const imgEl = document.createElement('img');
+        const textEl = document.createElement('p');
+
+        slideEl.classList.add('swiper-slide');
+        linkEl.href = news[i].link;
+        linkEl.target = "_blank";
+        imgEl.setAttribute('src', news[i].img);
+        imgEl.classList.add('swiper-lazy');
+        textEl.innerText = news[i].text;
+
+        linkEl.appendChild(imgEl);
+        slideEl.appendChild(linkEl);
+        slideEl.appendChild(textEl);
+
+        swiper.appendSlide(slideEl);
+
+        console.log('news create')
+    }
+}
+
+getNews();
 
 

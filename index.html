@@ -9,6 +9,7 @@
     <title>Metis Homepage</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <link rel="stylesheet" href="css/main.css">
@@ -19,6 +20,8 @@
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.0/Chart.min.js"></script>
 </head>
 
@@ -42,19 +45,25 @@
                     </ul>
 
                     <div class="btn-group">
-                        <a href="https://drive.google.com/file/d/1d1WWZKrjtxSqJ3eFeRccDbdRDbZpv3At/view" target="_blank" class="btn btn--primary paper">white paper</a>
-                        <a href="#" class="btn lang">
-                            <img src="img/en_icon.png" class="nation" alt="English" title="English">
-                            eng
-                            <img src="img/arrow_b_icon.png" class="arrow" alt="arrow_bottom" title="arrow_bottom">
-                        </a>
+                        <a href="https://drive.google.com/file/d/1d1WWZKrjtxSqJ3eFeRccDbdRDbZpv3At/view" target="_blank"
+                            class="header-btn btn--primary paper">white paper</a>
+                        <div class="choose-lang">
+                            <div class="header-btn lang">한국어</div>
+                            <div class="lang-list">
+                                <a href="#" class="lang">한국어</a>
+                                <a href="#" class="lang">English</a>
+                                <a href="#" class="lang">中文</a>
+                            </div>
+                        </div>
+
                     </div>
                 </nav>
             </div>
         </header>
 
+
         <!-- Scroll to top -->
-        
+
         <a href="#" class="scrolltop"><i class="fas fa-caret-square-up fa-3x"></i></a>
 
 
@@ -110,10 +119,19 @@
             </div>
             <div class="appBtn-group">
                 <button>
-                    <img src="img-src/googleplay.png" alt="googleplay">
+                    <a href="https://play.google.com/store/apps/details?id=com.imypool" target="_blank">
+                        <img src="img-src/googleplay.svg" alt="googleplay">
+                    </a>
                 </button>
                 <button>
-                    <img src="img-src/appstore.png" alt="appstore">
+                    <a href="https://apps.apple.com/kr/app/mypool-my-second-language/id1493746268" target="_blank">
+                        <img src="img-src/appstore.svg" alt="appstore">
+                    </a>
+                </button>
+                <button>
+                    <a href="https://onesto.re/0000747660" target="_blank">
+                        <img src="img-src/onestore.svg" alt="onestore">
+                    </a>
                 </button>
             </div>
         </section>
@@ -192,44 +210,44 @@
                 <div class="section-token-distribution">
                     <div class="token-details">
                         <div class="distribution-barchart barchart-token-generation">
-                          <span class="chart-lable">Sale</span>
-                          <span class="chart-amount">35%</span>
-                          <div class="chart-bar"></div>
+                            <span class="chart-lable">Sale</span>
+                            <span class="chart-amount">35%</span>
+                            <div class="chart-bar"></div>
                         </div>
                         <div class="distribution-barchart barchart-Ecosystem">
-                          <span class="chart-lable">Ecosystem</span>
-                          <span class="chart-amount">20%</span>
-                          <div class="chart-bar"></div>
+                            <span class="chart-lable">Ecosystem</span>
+                            <span class="chart-amount">20%</span>
+                            <div class="chart-bar"></div>
                         </div>
                         <div class="distribution-barchart barchart-Marketing">
-                          <span class="chart-lable">Marketing</span>
-                          <span class="chart-amount">10%</span>
-                          <div class="chart-bar"></div>
+                            <span class="chart-lable">Marketing</span>
+                            <span class="chart-amount">10%</span>
+                            <div class="chart-bar"></div>
                         </div>
                         <div class="distribution-barchart barchart-Reserve">
-                          <span class="chart-lable">Reserve</span>
-                          <span class="chart-amount">7%</span>
-                          <div class="chart-bar"></div>
+                            <span class="chart-lable">Reserve</span>
+                            <span class="chart-amount">7%</span>
+                            <div class="chart-bar"></div>
                         </div>
                         <div class="distribution-barchart barchart-Partner">
-                          <span class="chart-lable">Partner</span>
-                          <span class="chart-amount">8%</span>
-                          <div class="chart-bar"></div>
+                            <span class="chart-lable">Partner</span>
+                            <span class="chart-amount">8%</span>
+                            <div class="chart-bar"></div>
                         </div>
                         <div class="distribution-barchart barchart-Adviser">
-                          <span class="chart-lable">Adviser</span>
-                          <span class="chart-amount">3%</span>
-                          <div class="chart-bar"></div>
+                            <span class="chart-lable">Adviser</span>
+                            <span class="chart-amount">3%</span>
+                            <div class="chart-bar"></div>
                         </div>
                         <div class="distribution-barchart barchart-Team">
                             <span class="chart-lable">Team</span>
                             <span class="chart-amount">17%</span>
                             <div class="chart-bar"></div>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
                 </div>
 
-                
+
             </div>
             <div class="hiddenbox"></div>
 
@@ -247,72 +265,75 @@
                     <div class="roadmap-list">
                         <div class="left-group">
                             <div class="roadmap-left">
-                                <h2>2020 <span>2Q</span><div class="roadmap-circle">&nbsp;</div>
+                                <h2>2020 <span>2Q</span>
+                                    <div class="roadmap-circle">&nbsp;</div>
                                 </h2>
-        
-        
+
+
                             </div>
                         </div>
                         <div class="right-group">
                             <div class="roadmap-right">
                                 <div class="text-group">
-                                    <p>글로벌 에듀테크 플랫폼 '메티스' 공식 출시 <br/>
-                                    메티스 레퍼런스 서비스 '마이풀 글로벌' 런칭 <br/>
-                                    마이풀 원스토어 입점 <br/>
-                                    마이풀 SK텔레콤 부가서비스 런칭</p>
+                                    <p>글로벌 에듀테크 플랫폼 '메티스' 공식 출시 <br />
+                                        메티스 레퍼런스 서비스 '마이풀 글로벌' 런칭 <br />
+                                        마이풀 원스토어 입점 <br />
+                                        마이풀 SK텔레콤 부가서비스 런칭</p>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="roadmap-list">
                         <div class="left-group">
                             <div class="roadmap-left">
-                                <h2>2020 <span>3Q</span><div class="roadmap-circle">&nbsp;</div>
+                                <h2>2020 <span>3Q</span>
+                                    <div class="roadmap-circle">&nbsp;</div>
                                 </h2>
-        
-        
+
+
                             </div>
                         </div>
                         <div class="right-group">
                             <div class="roadmap-right">
                                 <div class="text-group">
-                                    <p>메티스 국내 서비스 '마이풀 영중토' 출시 <br/>
-                                    마이풀 글로벌, 마이풀 영중토 토큰 정책 병합
+                                    <p>메티스 국내 서비스 '마이풀 영중토' 출시 <br />
+                                        마이풀 글로벌, 마이풀 영중토 토큰 정책 병합
                                     </p>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="roadmap-list">
                         <div class="left-group">
                             <div class="roadmap-left">
-                                <h2>2020 <span>4Q</span><div class="roadmap-circle">&nbsp;</div>
+                                <h2>2020 <span>4Q</span>
+                                    <div class="roadmap-circle">&nbsp;</div>
                                 </h2>
-        
-        
+
+
                             </div>
                         </div>
                         <div class="right-group">
                             <div class="roadmap-right">
                                 <div class="text-group">
-                                    <p>메티스 거래소 상장 <br/>
-                                    리워드 풀 서비스 가동 <br/>
-                                    마이풀 2차 출시국
+                                    <p>메티스 거래소 상장 <br />
+                                        리워드 풀 서비스 가동 <br />
+                                        마이풀 2차 출시국
                                     </p>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="roadmap-list">
                         <div class="left-group">
                             <div class="roadmap-left lastroadmap">
                                 <h2>2021 <div class="roadmap-circle">&nbsp;</div>
                                 </h2>
-        
-        
+
+
                             </div>
                         </div>
                         <div class="right-group">
@@ -322,50 +343,50 @@
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
-                                
-            
+
+
             </div>
         </section>
 
 
         <!-- TEAM -->
 
-        <div id="Team" class="con06">
+        <div id="Team" class="section-team">
 
-            <div class="st15_box">
+            <div class="team-box">
                 <div class="summary">
                     <h2 class="summary__title">Team</h2>
                 </div>
-                <div class="content_box">
+                <div class="content-box">
                     <ul class="pr_list_box">
                         <li class="pr_bp">
                             <img src="img-src/team01.png">
                             <strong>CEO / 이현준</strong>
                             <p>
-                                - eKYSS CEO <br/>
-                                - 삼성물산 <br/>
-                                - 한양대학교 경영대학 IAB 자문교수 <br/>
-                                - eKYSS Global CEO                                
+                                - eKYSS CEO <br />
+                                - 삼성물산 <br />
+                                - 한양대학교 경영대학 IAB 자문교수 <br />
+                                - eKYSS Global CEO
                             </p>
                         </li>
                         <li class="list_rl_m">
                             <img src="img-src/team02.png">
                             <strong>CTO / 최현식</strong>
                             <p>
-                                - 현) eKYSS IT TEAM <br/>
-                                - 코어 개발자                                 
+                                - 현) eKYSS IT TEAM <br />
+                                - 코어 개발자
                             </p>
                         </li>
                         <li class="pr_bp">
                             <img src="img-src/team03.png">
                             <strong>CMO / 고범석</strong>
                             <p>
-                                - 건국대학교 분자생물학과 졸업 <br/>
-                                - 조선일보 에듀조선 B2B 영업팀 팀장 <br/>
-                                - (주) YBM넷 HRD 사업부 부서장                               
+                                - 건국대학교 분자생물학과 졸업 <br />
+                                - 조선일보 에듀조선 B2B 영업팀 팀장 <br />
+                                - (주) YBM넷 HRD 사업부 부서장
                             </p>
                         </li>
                     </ul>
@@ -378,28 +399,28 @@
                             <img src="img-src/team04.png">
                             <strong>COO / 한지은</strong>
                             <p>
-                                - 연세대학교 신문방송학과 졸업 <br/>
-                                - 시공사, 서울문화사 매거진 에디터 <br/>
-                                - KBS저널 편집장 <br/>
-                                - 현) SNS문화진흥원 상임위원 <br/>
-                                - 현) 리얼에이지 CEO                             
+                                - 연세대학교 신문방송학과 졸업 <br />
+                                - 시공사, 서울문화사 매거진 에디터 <br />
+                                - KBS저널 편집장 <br />
+                                - 현) SNS문화진흥원 상임위원 <br />
+                                - 현) 리얼에이지 CEO
                             </p>
                         </li>
                         <li class="list_rl_m">
                             <img src="img-src/team05.png">
                             <strong>Developer / 김진원</strong>
                             <p>
-                                - 현) eKYSS IT TEAM <br/>
-                                - Android 개발자                             
+                                - 현) eKYSS IT TEAM <br />
+                                - Android 개발자
                             </p>
                         </li>
                         <li class="pr_bp">
                             <img src="img-src/team06.png">
                             <strong>PM / 박준서</strong>
                             <p>
-                                - 한국외국어대학교 졸업 <br/>
-                                - 블록체인캠퍼스 코어코딩 과정 <br/>
-                                - 2018 Finwise Summit PM                          
+                                - 한국외국어대학교 졸업 <br />
+                                - 블록체인캠퍼스 코어코딩 과정 <br />
+                                - 2018 Finwise Summit PM
                             </p>
                         </li>
 
@@ -411,44 +432,44 @@
                             <img src="img-src/team07.png">
                             <strong>BD / 박상희 </strong>
                             <p>
-                                - 성결대학교 졸업 <br/>
-                                - eKYSS BlockChain BD                        
+                                - 성결대학교 졸업 <br />
+                                - eKYSS BlockChain BD
                             </p>
                         </li>
                     </ul>
                     <div class="clear"></div>
                 </div>
             </div>
-            <div class="st15_box">
+            <div class="team-box">
                 <div class="summary">
                     <h2 class="summary__title">Advisor</h2>
                 </div>
-                <div class="content_box">
+                <div class="content-box">
                     <ul class="pr_list_box">
                         <li class="pr_bp">
                             <img src="img-src/adviser01.png">
                             <strong>김형주</strong>
                             <p>
-                                - 블록체인산업진흥협회 이사장 <br/>
-                                - 한국외대 국제관계연구학 박사                       
+                                - 블록체인산업진흥협회 이사장 <br />
+                                - 한국외대 국제관계연구학 박사
                             </p>
                         </li>
                         <li class="list_rl_m">
                             <img src="img-src/adviser02.png">
                             <strong>최진영</strong>
                             <p>
-                                - 블록체인 투데이 회장 <br/>
-                                - Dconference 조직위원장 <br/>
-                                - WBA 공동대표                        
+                                - 블록체인 투데이 회장 <br />
+                                - Dconference 조직위원장 <br />
+                                - WBA 공동대표
                             </p>
                         </li>
                         <li class="pr_bp">
                             <img src="img-src/adviser03.png">
                             <strong>구태언</strong>
                             <p>
-                                - 고려대 법학과 <br/>
-                                - 서울중앙지검 첨단범죄수사부 <br/>
-                                - 로펌 TEK&LOW CEO                     
+                                - 고려대 법학과 <br />
+                                - 서울중앙지검 첨단범죄수사부 <br />
+                                - 로펌 TEK&LOW CEO
                             </p>
                         </li>
                     </ul>
@@ -461,17 +482,17 @@
                             <img src="img-src/adviser04.png">
                             <strong>H.J. Park</strong>
                             <p>
-                                - JTBC 콘텐츠사업 디렉터 <br/>
-                                - 영화 [뚜르] 감독 <br/>
-                                - 문화체육관광부 장관상                  
+                                - JTBC 콘텐츠사업 디렉터 <br />
+                                - 영화 [뚜르] 감독 <br />
+                                - 문화체육관광부 장관상
                             </p>
                         </li>
                         <li class="list_rl_m">
                             <img src="img-src/adviser05.png">
                             <strong>Allen Kim</strong>
                             <p>
-                                - 삼성 SDI <br/>
-                                - 마이크로소프트 시니어 엔지니어             
+                                - 삼성 SDI <br />
+                                - 마이크로소프트 시니어 엔지니어
                             </p>
                         </li>
                     </ul>
@@ -508,44 +529,26 @@
             </div>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="img-src/news.png" alt="news">
+                    <!-- <div class="swiper-slide">
+                        <a href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=008&aid=0004392596"
+                            target="_blank">
+                            <img data-src="https://imgnews.pstatic.net/image/008/2020/04/10/0004392596_001_20200410123402605.jpg?type=w647"
+                                alt="news">
+                        </a>
                         <p>
                             '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img-src/news.png" alt="news">
+                        <a href="https://www.mrepublic.co.kr/news/articleView.html?idxno=43052">
+                            <img data-src="https://www.mrepublic.co.kr/news/photo/202003/43052_60938_837.jpg" alt="news">
+                        </a>
                         <p>
-                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
+                            이카이스, 글로벌 어학 플랫폼 ‘마이풀’ 한국어 서비스 공개
                         </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img-src/news.png" alt="news">
-                        <p>
-                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img-src/news.png" alt="news">
-                        <p>
-                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img-src/news.png" alt="news">
-                        <p>
-                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img-src/news.png" alt="news">
-                        <p>
-                            '마이풀 영중토' 원스토어와 업무협약…국내 최초 영어·중국어·토익 월구독 서비스
-                        </p>
-                    </div>
-
+                    </div> -->
                 </div>
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
@@ -583,13 +586,16 @@
                 <h3>Community</h3>
                 <ul>
                     <li>
-                        <a href="https://t.me/metis_official" target="_blank"><img src="img-src/telegram.svg" alt="telegram"></a>
+                        <a href="https://t.me/metis_official" target="_blank"><img src="img-src/telegram.svg"
+                                alt="telegram"></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/themetis.io/" target="_blank"><img src="img-src/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.facebook.com/themetis.io/" target="_blank"><img src="img-src/facebook.svg"
+                                alt="facebook"></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/METIS_Notice" target="_blank"><img src="img-src/twitter.svg" alt="twitter"></a>
+                        <a href="https://twitter.com/METIS_Notice" target="_blank"><img src="img-src/twitter.svg"
+                                alt="twitter"></a>
                     </li>
                 </ul>
             </div>
@@ -597,15 +603,15 @@
                 <h3>Contact Us</h3>
                 <ul>
                     <li>
-                        <a class="mail-address" href="mailto:official@themetis.io">official@themetis.io</a>                        
+                        <a class="mail-address" href="mailto:official@themetis.io">official@themetis.io</a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@5.3.7/js/swiper.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="module" src="src/index.js"></script>
+
 </body>
 
 </html>
