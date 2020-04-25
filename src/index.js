@@ -222,3 +222,25 @@ function getNews() {
 getNews();
 
 
+// toggle nav
+
+const toggleEl = document.querySelector('.toggle')
+const toggleBtn = document.getElementById('toggle-btn');
+
+function toggleNav() {
+    toggleEl.classList.toggle('on');
+}
+
+function hideToggleEl() {
+    toggleEl.classList.remove('on');
+}
+
+toggleBtn.addEventListener('click', function(){
+    toggleNav();
+});
+
+window.addEventListener('resize', function() {
+    if(window.innerWidth > 1024) {
+        hideToggleEl();
+    }
+})
