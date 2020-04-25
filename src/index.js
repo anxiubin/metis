@@ -73,6 +73,17 @@ function printGraph() {
 
     // Set inner radius
     chart.innerRadius = am4core.percent(50);
+
+    //Add label
+    const label = chart.seriesContainer.createChild(am4core.Label);
+    label.textAlign = "middle";
+    label.horizontalCenter = "middle";
+    label.verticalCenter = "middle";
+    label.adapter.add("text", function(text, target){
+        return "[bold font-size:20px font-family: 'roboto']Total[/]\n[bold font-size:25px font-family: 'roboto']1,000,000,000[/]";
+      })
+    console.log(label)
+    label.fill = am4core.color("#7D2C16");
     
     // Add and configure Series
     const pieSeries = chart.series.push(new am4charts.PieSeries());
@@ -170,8 +181,18 @@ window.addEventListener('scroll', throttle(scrollView, 500));
 
 // News swiper
 
+
+
 const newsSwiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
+    // Default parameters
+    slidesPerView: 1,
+    // Responsive breakpoints
+    breakpoints: {
+        // window width >= 1024px
+        1024: {
+        slidesPerView: 2
+        }
+    },
     direction: 'horizontal',
     navigation: {
       nextEl: '.swiper-button-next',
@@ -180,6 +201,7 @@ const newsSwiper = new Swiper('.swiper-container', {
     loop: true,
     lazy: true,
 });
+
 
 
 function getNews() {
@@ -244,11 +266,11 @@ function hideToggleEl() {
 
 toggleBtn.addEventListener('click', toggleNav);
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', throttle(function() {
     if(window.innerWidth > 1024) {
         hideToggleEl();
-    }
-});
+    }}, 1000)
+);
 
 navMenus.forEach(list => {
     list.addEventListener('click', hideToggleEl);
