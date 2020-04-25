@@ -68,3 +68,82 @@ header .toggle.on {
     position: relative;
     right: 80px;
 }
+
+
+
+/* INTRO */
+
+.section--intro {
+    background: url(../img-src/title_background_medium.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1024px;
+    height: 800px;
+}
+
+.intro-text {
+    font-size: 4.5vw;
+}
+
+
+/* Service */
+
+.app {
+    display: none;
+}
+
+
+.swiper-container-appslide {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.swiper-container-appslide .swiper-wrapper {
+    margin-bottom: 0;
+}
+
+.swiper-container-appslide .swiper-slide {
+    background: transparent;
+}
+
+
+.appBtn-group button {
+    margin: 10px;
+}
+
+.appBtn-group img {
+    width: 200px;
+    height: 65px;
+}
+
+.swiper-container-appslide img {
+    height: 890px;
+}
+
+
+
+/* ECOSYSTEM */
+
+.minerva-arch img {
+    width: 768px;
+}
+
+
+
+/* TOKEN */
+
+
+.details-group {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-token-distribution {
+    width: 50vw;
+    padding: 20px 0;
+}
+
+.hiddenbox {
+    top: -530px;
+}

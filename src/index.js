@@ -7,16 +7,16 @@ const chooseBtn = document.querySelector('.header-btn.lang');
 const langList = document.querySelector('.lang-list');
 
 function showLangList() {
-    if(langList.classList.contains('show')) {
-        langList.classList.remove('show');
+    if(langList.classList.contains('show-flex')) {
+        langList.classList.remove('show-flex');
     } else {
-        langList.classList.add('show');
+        langList.classList.add('show-flex');
     }
 }
 
 function changeLang() {
     chooseBtn.innerText = event.target.innerText;
-    langList.classList.remove('show');
+    langList.classList.remove('show-flex');
 }
 
 langList.addEventListener('click', changeLang);
@@ -170,28 +170,16 @@ window.addEventListener('scroll', throttle(scrollView, 500));
 
 // News swiper
 
-const swiper = new Swiper('.swiper-container', {
+const newsSwiper = new Swiper('.swiper-container', {
     slidesPerView: 2,
-    direction: getDirection(),
+    direction: 'horizontal',
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    on: {
-      resize: function () {
-        swiper.changeDirection(getDirection());
-      }
-    }
+    loop: true,
+    lazy: true,
 });
-
-
-function getDirection() {
-    // var windowWidth = window.innerWidth;
-    // var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-    var direction = 'horizontal';
-
-    return direction;
-}
 
 
 function getNews() {
@@ -203,6 +191,7 @@ function getNews() {
         const textEl = document.createElement('p');
 
         slideEl.classList.add('swiper-slide');
+        slideEl.classList.add('newsslide');
         linkEl.href = news[i].link;
         linkEl.target = "_blank";
         imgEl.setAttribute('src', news[i].img);
@@ -213,7 +202,7 @@ function getNews() {
         slideEl.appendChild(linkEl);
         slideEl.appendChild(textEl);
 
-        swiper.appendSlide(slideEl);
+        newsSwiper.appendSlide(slideEl);
 
         console.log('news create')
     }
@@ -222,10 +211,28 @@ function getNews() {
 getNews();
 
 
+// App swiper
+
+const appSwiper = new Swiper('.swiper-container-appslide', {
+    spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+});
+
+
+
 // toggle nav
 
 const toggleEl = document.querySelector('.toggle')
 const toggleBtn = document.getElementById('toggle-btn');
+const navMenus = document.querySelectorAll('.nav-menu a');
 
 function toggleNav() {
     toggleEl.classList.toggle('on');
@@ -235,12 +242,14 @@ function hideToggleEl() {
     toggleEl.classList.remove('on');
 }
 
-toggleBtn.addEventListener('click', function(){
-    toggleNav();
-});
+toggleBtn.addEventListener('click', toggleNav);
 
 window.addEventListener('resize', function() {
     if(window.innerWidth > 1024) {
         hideToggleEl();
     }
+});
+
+navMenus.forEach(list => {
+    list.addEventListener('click', hideToggleEl);
 })
