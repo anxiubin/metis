@@ -60,7 +60,7 @@ button {
     font-style: normal;
     font-size: 22px;
     line-height: 30px;
-    margin-top: 30px;
+    margin-top: 40px;
     max-width: 890px;
     padding: 0 20px;
 }
@@ -132,10 +132,6 @@ button {
 
 .nav-menu li a:hover {
     color: #ff5420;
-}
-
-.btn-group {
-    display: flex;
 }
 
 .choose-lang {
@@ -360,7 +356,6 @@ button {
     border: none;
     padding: 5px;
     margin: 30px;
-    right: 10px;
     position: relative;
 }
 
@@ -711,42 +706,29 @@ button {
 
 
 .content-box {
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
 .content-box img {
     width: 190px;
 }
 
-.pr_list_box {
-    overflow: hidden;
-}
-
-.pr_bp {
-    padding-bottom: 26px;
-}
-
-.list_rl_m {
-    margin-left: 90px;
-    margin-right: 100px;
-}
-
-.pr_list_box li {
-    width: 250px;
+.content-box li {
+    width: 30%;
     float: left;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pr_list_box li img {
+.content-box li img {
     display: block;
     margin-bottom: 25px;
     width: 190px;
 }
 
-.pr_list_box li strong {
+.content-box li strong {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     color: #313171;
@@ -756,7 +738,7 @@ button {
     font-weight: bold;
 }
 
-.pr_list_box li p {
+.content-box li p {
     line-height: 22px;
     color: #3f3f3f;
     font-weight: 700;
@@ -791,16 +773,6 @@ button {
     color: #ff541f;
 }
 
-.team-box>i {
-    display: block;
-    margin: auto;
-    width: 38px;
-    height: 7px;
-    border-radius: 3px;
-    background: #ff541f;
-    margin-bottom: 20px;
-    margin-top: 118px;
-}
 
 
 
@@ -893,6 +865,10 @@ button {
     top: 150px;
 }
 
+.pagination-hidden {
+    display: none;
+}
+
 
 /* FOOTER */
 
@@ -917,8 +893,14 @@ button {
     margin-left: 50px;
 }
 
+.footer-list.footer-logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
 .footer-logo img {
-    width: 300px;
+    width: 320px;
 }
 
 .footer-list h3 {
@@ -960,6 +942,8 @@ button {
     line-height: 18px;
     text-align: center;
     color: #B5B5B6;
+    margin-top: 12px;
+    padding-left: 10px;
 }
 
 .footer-community ul {

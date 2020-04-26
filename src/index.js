@@ -190,7 +190,8 @@ const newsSwiper = new Swiper('.swiper-container', {
     breakpoints: {
         // window width >= 1024px
         1024: {
-        slidesPerView: 2
+        slidesPerView: 2,
+        autoplay: false
         }
     },
     direction: 'horizontal',
@@ -200,6 +201,14 @@ const newsSwiper = new Swiper('.swiper-container', {
     },
     loop: true,
     lazy: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
 });
 
 
@@ -236,16 +245,15 @@ getNews();
 // App swiper
 
 const appSwiper = new Swiper('.swiper-container-appslide', {
-    spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+    centeredSlides: true,
+    autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    },
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
 });
 
 

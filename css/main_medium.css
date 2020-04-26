@@ -11,7 +11,7 @@ header .toggle {
 }
 
 header .toggle.on {
-    display: block;
+    display: flex;
 }
 
 #toggle-btn {
@@ -35,6 +35,12 @@ header .toggle.on {
     position: relative;
 }
 
+.header-nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-nav .logo {
     padding-left: 30px;
 }
@@ -56,6 +62,8 @@ header .toggle.on {
 
 .nav-menu li a {
     font-weight: 300;
+    width: 100vw;
+    padding: 0;
 }
 
 .nav-menu li a:hover {
@@ -63,8 +71,15 @@ header .toggle.on {
     color: #777070;
 }
 
-.btn-group {
-    display: flex;
+.header-btn.btn--primary {
+    color: #fff;
+    background: #ff8510;
+
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.header-btn.lang {
     position: relative;
     right: 80px;
 }
@@ -96,6 +111,7 @@ header .toggle.on {
 .swiper-container-appslide {
     display: block;
     margin-bottom: 50px;
+    left: 20px;
 }
 
 .swiper-container-appslide .swiper-wrapper {
@@ -118,6 +134,10 @@ header .toggle.on {
 
 .swiper-container-appslide img {
     height: 890px;
+}
+
+.swiper-pagination {
+    left: -20px;
 }
 
 
@@ -146,4 +166,63 @@ header .toggle.on {
 
 .hiddenbox {
     top: -530px;
+}
+
+
+
+/* ROADMAP */
+
+.left-group {
+    width: 35%;
+}
+
+.roadmap-left .roadmap-circle {
+    top: -45px;
+}
+
+.roadmap-right {
+    padding-left: 50px;
+}
+
+.roadmap-left.lastroadmap {
+    width: 35%;
+}
+
+.roadmap-list.last-list {
+    position: relative;
+}
+
+.roadmap-right.lastroadmap {
+    border-left: 1px solid white;
+    height: 20px;
+    margin-bottom: 100px;
+}
+
+
+
+/* TEAM */
+
+.partner-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+/* NEWS */
+
+.button-hidden {
+    display: none;
+}
+
+.pagination-hidden {
+    display: block;
+}
+
+.swiper-wrapper {
+    margin-bottom: 150px;
+}
+
+.swiper-wrapper {
+    margin-bottom: 80px;
 }
