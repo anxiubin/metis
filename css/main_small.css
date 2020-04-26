@@ -62,6 +62,25 @@
 }
 
 
+.minerva-text ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.minerva-text ul li {
+    margin: 20px auto;
+    width: 330px;
+}
+
+.minerva-text .texts h2 {
+    font-size: 23px;
+}
+
+.minerva-text .texts p {
+    font-size: 21px;
+    line-height: 30px;
+}
+
 .left-group {
     width: 20%;
 }
