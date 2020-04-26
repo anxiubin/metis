@@ -230,3 +230,7 @@ header .toggle.on {
 .swiper-wrapper {
     margin-bottom: 80px;
 }
+
+.swiper-container {
+    max-width: 768px;
+}
