@@ -114,3 +114,11 @@
 .swiper-container {
     max-width: 480px;
 }
+
+.newsslide img {
+    width: 380px;
+}
+
+.swiper-slide p {
+    max-width: 380px;
+}
