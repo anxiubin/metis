@@ -1,0 +1,26 @@
+.content-box li img {
+    display: block;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+
+.content-box li strong {
+    font-size: 20px;
+}
+
+.content-box li p {
+    width: 160px;
+}
+
+.partner-logos img {
+    width: 35vw;
+}
+
+.newsslide img {
+    width: 100vw;
+}
+
+.swiper-slide p {
+    width: 90vw;
+}

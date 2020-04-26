@@ -103,12 +103,20 @@
     font-size: 18px;
 }
 
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .content-box li {
-    width: 50%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .partner-logos img {
-    width: 150px;
+    width: 35vw;
 }
 
 .swiper-container {
@@ -121,4 +129,32 @@
 
 .swiper-slide p {
     max-width: 380px;
+}
+
+
+.footer-box {
+    height: 100%;
+    padding: 30px 0;
+}
+
+.footer-box-inner {
+    display: block;
+}
+
+.footer-right {
+    display: block;
+    float: none;
+}
+
+.footer-left {
+    float: none;
+}
+
+.footer-list {
+    margin: 40px 10px;
+}
+
+.scrolltop {
+    bottom: 15px;
+    right: 15px;
 }

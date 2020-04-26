@@ -82,7 +82,7 @@ function printGraph() {
     label.adapter.add("text", function(text, target){
         return "[bold font-size:20px font-family: 'roboto']Total[/]\n[bold font-size:25px font-family: 'roboto']1,000,000,000[/]";
       })
-    console.log(label)
+    console.log(label);
     label.fill = am4core.color("#7D2C16");
     
     // Add and configure Series
@@ -90,14 +90,22 @@ function printGraph() {
     pieSeries.dataFields.value = "rate";
     pieSeries.dataFields.category = "target";
     pieSeries.slices.template.propertyFields.fill = "color";
-    pieSeries.labels.template.text = "[bold]{target}: [bold]{rate}%";
-    pieSeries.slices.template.tooltipText = "{target}: [bold]{rate}%";
+
+
     pieSeries.slices.template.stroke = am4core.color("#fff");
     pieSeries.tooltip.autoTextColor = false;
     pieSeries.tooltip.label.fill = am4core.color("#FFF");
+    pieSeries.defaultState.transitionDuration = 1000;
     pieSeries.slices.template.strokeWidth = 2;
     pieSeries.slices.template.strokeOpacity = 1;
-    pieSeries.defaultState.transitionDuration = 1000;
+    pieSeries.labels.template.text = "[bold]{target}: [bold]{rate}%";
+    pieSeries.slices.template.tooltipText = "{target}: [bold]{rate}%";
+    pieSeries.alignLabels = false;
+    pieSeries.labels.template.wrap = true;
+    // pieSeries.labels.template.hidden = true;
+    
+    console.log(pieSeries.labels);
+
     // This creates initial animation
     pieSeries.hiddenState.properties.opacity = 1;
     pieSeries.hiddenState.properties.endAngle = -90;
@@ -191,7 +199,6 @@ const newsSwiper = new Swiper('.swiper-container', {
         // window width >= 1024px
         1024: {
         slidesPerView: 2,
-        autoplay: false
         }
     },
     direction: 'horizontal',
@@ -204,10 +211,6 @@ const newsSwiper = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-    },
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
     },
 });
 

@@ -38,9 +38,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" media="all and (max-width: 1024px)" href="css/main_medium.css">
-    <link rel="stylesheet" media="all and (max-width: 768px)" href="css/main_small.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1024px)" href="css/main_medium.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 768px)" href="css/main_small.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 480px)" href="css/main_xsmall.css">
 
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
@@ -557,17 +558,17 @@
         <section class="section--news" id="News">
             <div class="summary">
                 <h2 class="summary__title">News</h2>
-            </div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    </div>
+
+                    <div class="swiper-pagination pagination-hidden"></div>
+
+                    <div class="swiper-button-next button-hidden"></div>
+                    <div class="swiper-button-prev button-hidden"></div>
                 </div>
-
-                <div class="swiper-pagination pagination-hidden"></div>
-
-                <div class="swiper-button-next button-hidden"></div>
-                <div class="swiper-button-prev button-hidden"></div>
             </div>
-
         </section>
 
 
@@ -579,48 +580,53 @@
 
     <footer class="footer-box">
         <div class="footer-box-inner">
-            <div class="footer-list footer-logo">
-                <img src="img-src/footer_logo.png" alt="footer-logo">
-                <p>Copyright © 2019 eKYSS Global. All Rights Reserved.</p>
+            <div class="footer-right">
+                <div class="footer-list footer-family">
+                    <h3>Family Site</h3>
+                    <ul>
+                        <li>
+                            <a href="http://www.ekyss.co.kr/" target="_blank">eKYSS</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">MYPOOL</a>
+                        </li>
+                        <li>
+                            <a href="https://english.mapool.co.kr/web/main/main.do" target="_blank">MAPOOL</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-list footer-community">
+                    <h3>Community</h3>
+                    <ul>
+                        <li>
+                            <a href="https://t.me/metis_official" target="_blank"><img src="img-src/telegram.svg"
+                                    alt="telegram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/themetis.io/" target="_blank"><img
+                                    src="img-src/facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/METIS_Notice" target="_blank"><img src="img-src/twitter.svg"
+                                    alt="twitter"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-list footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <a class="mail-address" href="mailto:official@themetis.io">official@themetis.io</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="footer-list footer-family">
-                <h3>Family Site</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.ekyss.co.kr/" target="_blank">eKYSS</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">MYPOOL</a>
-                    </li>
-                    <li>
-                        <a href="https://english.mapool.co.kr/web/main/main.do" target="_blank">MAPOOL</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-list footer-community">
-                <h3>Community</h3>
-                <ul>
-                    <li>
-                        <a href="https://t.me/metis_official" target="_blank"><img src="img-src/telegram.svg"
-                                alt="telegram"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/themetis.io/" target="_blank"><img src="img-src/facebook.svg"
-                                alt="facebook"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/METIS_Notice" target="_blank"><img src="img-src/twitter.svg"
-                                alt="twitter"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-list footer-contact">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>
-                        <a class="mail-address" href="mailto:official@themetis.io">official@themetis.io</a>
-                    </li>
-                </ul>
+            <div class="footer-left">
+                <div class="footer-list footer-logo">
+                    <img src="img-src/footer_logo.png" alt="footer-logo">
+                    <p>Copyright © 2019 eKYSS Global. All Rights Reserved.</p>
+                </div>
             </div>
         </div>
     </footer>

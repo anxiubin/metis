@@ -710,7 +710,9 @@ button {
 
 
 .content-box {
-    padding-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 10px;
 }
 
 .content-box img {
@@ -718,8 +720,6 @@ button {
 }
 
 .content-box li {
-    width: 30%;
-    float: left;
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -814,7 +814,7 @@ button {
 .swiper-container {
     max-width: 1024px;
     height: 100%;
-    margin: 0 10px 50px;
+    margin: 50px 10px 50px;
 }
 
 .swiper-wrapper {
@@ -885,10 +885,18 @@ button {
 
 .footer-box-inner {
     max-width: 1024px;
-    display: flex;
     justify-content: center;
     height: 100%;
     margin: auto;
+}
+
+.footer-right {
+    display: flex;
+    float: right;
+}
+
+.footer-left {
+    float: left;
 }
 
 .footer-list {
