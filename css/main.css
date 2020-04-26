@@ -327,7 +327,7 @@ button {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FF9852 0%, #FFFBF0 81.25%);
 }
 
-.mypool-logo {
+.mypool-logo img {
     width: 499px;
     height: 114px;
 }
@@ -810,6 +810,7 @@ button {
 .swiper-container {
     max-width: 1024px;
     height: 100%;
+    margin-bottom: 50px;
 }
 
 .swiper-wrapper {

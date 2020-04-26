@@ -1,9 +1,26 @@
+.header-nav .logo {
+    padding-left: 5px;
+}
+
+.header-btn.lang {
+    width: 70px;
+}
+
+.lang-list {
+    width: 70px;
+    right: 83px;
+}
+
 .nav-menu li a {
     font-size: 18px;
 }
 
 .header-btn.btn--primary {
     font-size: 18px;
+}
+
+.section--intro {
+    height: 600px;
 }
 
 .intro-box img {
@@ -14,6 +31,11 @@
     max-width: 85vw;
 }
 
+
+.mypool-logo img {
+    width: 360px;
+}
+
 .appBtn-group {
     display: flex;
     flex-direction: column;
@@ -21,6 +43,14 @@
 
 .appBtn-group button {
     margin: 0;
+}
+
+.swiper-container-appslide img {
+    height: 600px;
+}
+
+.swiper-container-appslide .swiper-pagination {
+    left: -15px;
 }
 
 .minerva-arch img {
@@ -75,4 +105,8 @@
 
 .content-box li {
     width: 50%;
+}
+
+.partner-logos img {
+    width: 150px;
 }
