@@ -1,3 +1,10 @@
+/* COMMON */
+
+.br-show {
+    display: block;
+}
+
+
 /* HEADER */
 
 .header-nav .logo {
