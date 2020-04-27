@@ -234,7 +234,7 @@ button {
 
 #toggle-btn {
     display: none;
-    background: url(../img/toggle-btn.svg);
+    background: url(../img-src/toggle-btn.svg);
     width: 18px;
     height: 24px;
     position: absolute;
@@ -251,7 +251,7 @@ button {
 }
 
 .section--intro {
-    background: url(../img-src/title_background.png);
+    background: url(../img-src/intro_background.png);
     background-repeat: no-repeat;
     height: 800px;
     display: flex;
@@ -306,7 +306,10 @@ button {
     border: none;
 }
 
-/* FEATURE */
+
+
+/* ABOUT */
+
 .section--feature {
     background: #fff;
     position: relative;
@@ -321,7 +324,7 @@ button {
 
 
 
-/* Service */
+/* SERVICE */
 
 .section--service {
     display: flex;
@@ -397,6 +400,8 @@ button {
     z-index: 1;
     display: none;
 }
+
+
 
 /* ECOSYSTEM */
 
@@ -474,7 +479,6 @@ button {
 
 
 /* TOKEN */
-
 
 .section--token {
     background: #FFFBF0;

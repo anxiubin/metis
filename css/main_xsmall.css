@@ -1,7 +1,26 @@
+/* COMMON */
+
 .summary__content {
     font-size: 18px;
 }
 
+
+/* BTN */
+
+.header-btn.lang {
+    right: 65px;
+}
+
+
+/* SERVICE */
+
+.section--service {
+    padding-top: 90px;
+}
+
+
+
+/* ECOSYSTEM */
 
 .minerva-text .texts h2 {
     font-size: 21px;
@@ -17,6 +36,8 @@
 
 
 
+/* TOKEN */
+
 .chartBox {
     width: 380px;
 }
@@ -26,6 +47,8 @@
 }
 
 
+
+/* ROADMAP */
 
 .section--roadmap {
     height: 1250px;
@@ -44,7 +67,6 @@
 }
 
 .roadmap-left {
-    /* width: 10%; */
     padding-left: 40px;
     float: none;
 }
@@ -88,12 +110,12 @@
 
 .roadmap-list:nth-child(3) {
     position: relative;
-    top: -120px;
+    top: -150px;
 }
 
 .roadmap-list:nth-child(4) {
     position: relative;
-    top: -170px;
+    top: -200px;
 }
 
 .roadmap-right.lastroadmap {
@@ -105,13 +127,13 @@
 }
 
 
+/* TEAM */
 
 .content-box li img {
     display: block;
     margin-bottom: 15px;
     width: 150px;
 }
-
 
 .content-box li strong {
     font-size: 20px;
@@ -123,13 +145,15 @@
 
 
 
+/* PARTNER */
+
 .partner-logos img {
     width: 35vw;
 }
 
 
 
-
+/* NEWS */
 
 .newsslide img {
     width: 100vw;

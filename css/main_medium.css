@@ -1,8 +1,3 @@
-.body__container {
-    overflow: hidden;
-}
-
-
 /* HEADER */
 
 
@@ -17,8 +12,6 @@ header .toggle.on {
 #toggle-btn {
     display: flex;
 }
-
-
 
 .header-inner {
     display: flex;
@@ -92,25 +85,16 @@ header .toggle.on {
 
 /* INTRO */
 
-.section--intro {
-    background: url(../img-src/title_background_medium.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1024px;
-    height: 800px;
-}
-
 .intro-text {
     font-size: 4.5vw;
 }
 
 
-/* Service */
+/* SERVICE */
 
 .app {
     display: none;
 }
-
 
 .swiper-container-appslide {
     display: block;
@@ -125,7 +109,6 @@ header .toggle.on {
 .swiper-container-appslide .swiper-slide {
     background: transparent;
 }
-
 
 .appBtn-group button {
     margin: 10px;
@@ -153,9 +136,7 @@ header .toggle.on {
 }
 
 
-
 /* TOKEN */
-
 
 .details-group {
     max-width: 1024px;
@@ -244,6 +225,9 @@ header .toggle.on {
     width: 430px;
 }
 
+
+
+/* FOOTER */
 
 .footer-list {
     margin: 0 10px;
