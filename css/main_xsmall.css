@@ -46,6 +46,10 @@
     margin: 20px auto;
 }
 
+.hiddenbox {
+    top: -525px;
+    height: 60px;
+}
 
 
 /* ROADMAP */
