@@ -1,3 +1,22 @@
+.summary__content {
+    font-size: 18px;
+}
+
+
+.minerva-text .texts h2 {
+    font-size: 21px;
+}
+
+.minerva-text ul li {
+    margin: 10px auto;
+}
+
+.minerva-text .texts p {
+    font-size: 18px;
+}
+
+
+
 .section--roadmap {
     height: 1250px;
 }
@@ -92,9 +111,15 @@
     width: 160px;
 }
 
+
+
 .partner-logos img {
     width: 35vw;
 }
+
+
+
+
 
 .newsslide img {
     width: 100vw;
@@ -102,4 +127,5 @@
 
 .swiper-slide p {
     width: 90vw;
+    font-size: 19px;
 }

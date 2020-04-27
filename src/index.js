@@ -100,9 +100,9 @@ function printGraph() {
     pieSeries.slices.template.strokeOpacity = 1;
     pieSeries.labels.template.text = "[bold]{target}: [bold]{rate}%";
     pieSeries.slices.template.tooltipText = "{target}: [bold]{rate}%";
+
     pieSeries.alignLabels = false;
     pieSeries.labels.template.wrap = true;
-    // pieSeries.labels.template.hidden = true;
     
     console.log(pieSeries.labels);
 
@@ -134,6 +134,30 @@ function printGraph() {
               return am4core.color("#000");
           }
     });
+
+
+    //toggle label
+
+    if(window.innerWidth <= 480) {
+        pieSeries.labels.template.disabled = true;
+        pieSeries.ticks.template.disabled = true;
+    } else {
+        pieSeries.labels.template.disabled = false;
+        pieSeries.ticks.template.disabled = false;
+    }
+    
+
+    window.addEventListener('resize', throttle(function() {
+            if(window.innerWidth <= 480) {
+                pieSeries.labels.template.disabled = true;
+                pieSeries.ticks.template.disabled = true;
+            } else {
+                pieSeries.labels.template.disabled = false;
+                pieSeries.ticks.template.disabled = false;
+            }
+        }, 1000)
+    );
+
 
 }
 
