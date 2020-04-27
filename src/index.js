@@ -32,7 +32,9 @@ function printGraph() {
     
     // Create chart instance
     const chart = am4core.create("chartdiv", am4charts.PieChart);
-    
+
+
+
     // Add data
     chart.data = [ {
         "target": "Team",
@@ -100,8 +102,6 @@ function printGraph() {
     pieSeries.slices.template.strokeOpacity = 1;
     pieSeries.labels.template.text = "[bold]{target}: [bold]{rate}%";
     pieSeries.slices.template.tooltipText = "{target}: [bold]{rate}%";
-
-    pieSeries.alignLabels = false;
     pieSeries.labels.template.wrap = true;
     
     console.log(pieSeries.labels);
@@ -138,7 +138,7 @@ function printGraph() {
 
     //toggle label
 
-    if(window.innerWidth <= 480) {
+    if(window.innerWidth <= 768) {
         pieSeries.labels.template.disabled = true;
         pieSeries.ticks.template.disabled = true;
     } else {
@@ -148,7 +148,7 @@ function printGraph() {
     
 
     window.addEventListener('resize', throttle(function() {
-            if(window.innerWidth <= 480) {
+            if(window.innerWidth <= 768) {
                 pieSeries.labels.template.disabled = true;
                 pieSeries.ticks.template.disabled = true;
             } else {

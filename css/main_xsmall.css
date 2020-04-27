@@ -17,6 +17,16 @@
 
 
 
+.chartBox {
+    width: 380px;
+}
+
+.details-group {
+    margin: 20px auto;
+}
+
+
+
 .section--roadmap {
     height: 1250px;
 }
