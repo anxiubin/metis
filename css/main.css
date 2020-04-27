@@ -154,7 +154,7 @@ button {
 .lang-list {
     position: absolute;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 5px 0;
     border: solid 1px #ced3d6;
     border-radius: 5px;
     width: 100px;
