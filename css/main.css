@@ -208,7 +208,7 @@ button {
     padding: 0 10px;
     margin: 0 5px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -278,7 +278,7 @@ button {
 }
 
 .intro-box img {
-    width: 60%;
+    width: 70%;
 }
 
 .intro-text {
