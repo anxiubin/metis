@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* HEADER */
 
 
@@ -6,16 +13,26 @@ header .toggle {
 }
 
 header .toggle.on {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 #toggle-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     position: relative;
@@ -23,14 +40,26 @@ header .toggle.on {
 
 .header-nav {
     display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
 
 .header-nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -64,6 +93,12 @@ header .toggle.on {
     color: #777070;
 }
 
+.choose-lang {
+    position: absolute;
+    right: 80px;
+    top: 15px;
+}
+
 .header-btn.btn--primary {
     color: #fff;
     background: #ff8510;
@@ -72,21 +107,16 @@ header .toggle.on {
     margin-bottom: 1rem;
 }
 
-.header-btn.lang {
-    position: relative;
-    right: 80px;
-}
+.header-btn.lang {}
 
-.lang-list {
-    right: 82px;
-}
+.lang-list {}
 
 
 
 /* INTRO */
 
 .intro-text {
-    font-size: 4.5vw;
+    font-size: 6vw;
 }
 
 
@@ -140,7 +170,12 @@ header .toggle.on {
 
 .details-group {
     max-width: 1024px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -188,9 +223,17 @@ header .toggle.on {
 
 /* TEAM */
 
+
+
+
+/* PARTNER */
+
 .partner-logos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+}
+
+.partner-logos img {
+    margin: 0 5%;
 }
 
 
