@@ -1,218 +1,53 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/* COMMON */
-
-.br-show {
-    display: block;
-}
-
-
 /* HEADER */
-
-.header-nav .logo {
-    padding-left: 5px;
-}
-
-.header-btn.lang {
-    width: 70px;
-}
 
 #toggle-btn {
     right: 10px;
-}
-
-.lang-list {
-    width: 70px;
-    right: 83px;
 }
 
 .choose-lang {
     right: 40px;
 }
 
-.nav-menu li a {
-    font-size: 18px;
-}
 
-.header-btn.btn--primary {
-    font-size: 18px;
-}
-
-.section--intro {
-    height: 600px;
-}
-
-.intro-box img {
-    width: 80vw;
-}
-
-.about-img img {
-    max-width: 85vw;
-}
+/* TOKEN */
 
 
-
-/* SERVICE */
-
-.mypool-logo img {
-    width: 360px;
-}
-
-.appBtn-group {
+.chartBox {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    width: 680px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.appBtn-group button {
-    margin: 0;
+#chartdiv {
+    width: 100vw;
+    height: 400px;
 }
-
-.swiper-container-appslide img {
-    height: 600px;
-}
-
-.swiper-container-appslide .swiper-pagination {
-    left: -15px;
-}
-
-
-
-/* ECOSYSTEM */
-
-.minerva-arch img {
-    width: 95vw;
-}
-
-.minerva-text ul li {
-    margin: 0;
-}
-
-
-.minerva-text ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-.minerva-text ul li {
-    margin: 20px auto;
-    width: 330px;
-}
-
-.minerva-text .texts h2 {
-    font-size: 23px;
-}
-
-.minerva-text .texts p {
-    font-size: 21px;
-    line-height: 30px;
-}
-
-
-
-/* ROADMAP */
-
-.left-group {
-    width: 20%;
-}
-
-.roadmap-left {
-    width: 10%;
-    padding-right: 80px;
-}
-
-.roadmap-wrapper h2 {
-    font-size: 25px;
-}
-
-.roadmap-left span {
-    font-size: 35px;
-}
-
-.roadmap-left .roadmap-circle {
-    top: -60px;
-    right: -92px;
-    width: 24px;
-    height: 24px;
-}
-
-.roadmap-left.lastroadmap {
-    width: 10%;
-}
-
-.lastroadmap .roadmap-circle {
-    top: -25px !important;
-}
-
-.lastroadmap p {
-    top: -10px;
-    position: relative;
-}
-
-.text-group {
-    font-size: 18px;
-}
-
 
 
 /* TEAM */
 
-
-
-/* NEWS */
-
-.swiper-container {
-    max-width: 480px;
+.content-box li {
+    width: 100%;
 }
 
-.newsslide img {
-    width: 380px;
+.text-group {
+    max-width: 100%;
 }
 
-.swiper-slide p {
-    max-width: 380px;
+.right-group {
+    width: 70%;
 }
 
-
-
-/* FOOTER */
-
-.footer-box {
-    height: 100%;
-    padding: 30px 0;
+.roadmap-list {
+    margin-left: 10%;
 }
-
-.footer-box-inner {
-    display: block;
-}
-
-.footer-right {
-    display: block;
-    float: none;
-}
-
-.footer-left {
-    float: none;
-}
-
-.footer-list {
-    margin: 40px 10px;
-}
-
 
 
 /* BTN */

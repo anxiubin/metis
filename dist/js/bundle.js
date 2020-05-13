@@ -10340,7 +10340,7 @@ function printGraph() {
   label.horizontalCenter = "middle";
   label.verticalCenter = "middle";
   label.adapter.add("text", function (text, target) {
-    return "[bold font-size:20px font-family: 'roboto']Total[/]\n[bold font-size:25px font-family: 'roboto']1,000,000,000[/]";
+    return "[bold font-size:20px font-family: 'Roboto']Total[/]\n[bold font-size:22px font-family: 'Roboto']1,000,000,000[/]";
   });
   label.fill = am4core.color("#7D2C16"); // Add and configure Series
 
@@ -10351,11 +10351,13 @@ function printGraph() {
   pieSeries.slices.template.stroke = am4core.color("#fff");
   pieSeries.tooltip.autoTextColor = false;
   pieSeries.tooltip.label.fill = am4core.color("#FFF");
+  pieSeries.tooltip.fontFamily = "Roboto";
   pieSeries.defaultState.transitionDuration = 1000;
   pieSeries.slices.template.strokeWidth = 2;
   pieSeries.slices.template.strokeOpacity = 1;
   pieSeries.labels.template.text = "[bold]{target}: [bold]{rate}%";
   pieSeries.slices.template.tooltipText = "{target}: [bold]{rate}%";
+  pieSeries.labels.template.fontFamily = "Roboto";
   pieSeries.labels.template.wrap = true; // This creates initial animation
 
   pieSeries.hiddenState.properties.opacity = 1;
