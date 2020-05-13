@@ -13,5 +13,5 @@ export let news = [
         link: "https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=101&oid=008&aid=0004326921",
         img: "https://imgnews.pstatic.net/image/008/2019/12/18/0004326921_001_20191218121100921.jpg?type=w647",
         text: "[대한민국 소비자만족지수 1위] 이카이스 ‘마풀영어’, 온라인 교육 2년 연속 수상"
-    },
+    }
 ]

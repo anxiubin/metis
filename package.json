@@ -1,0 +1,20 @@
+{
+    "name": "metis",
+    "version": "1.0.0",
+    "description": "Global Blockchain Edu-Tech Platform",
+    "main": "webpack.config.js",
+    "scripts": {
+        "build": "webpack -w"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.8.7",
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-transform-exponentiation-operator": "^7.8.3",
+        "@babel/preset-env": "^7.9.6",
+        "babel-loader": "^8.1.0",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11"
+    }
+}

@@ -1,177 +1,58 @@
-/* COMMON */
-
-.summary__content {
-    font-size: 18px;
-}
-
-
 /* HEADER */
 
-.lang-list {
-    width: 70px;
-    right: 67px;
+#toggle-btn {
+    right: 10px;
 }
 
-
-/* BTN */
-
-.header-btn.lang {
-    right: 65px;
+.choose-lang {
+    right: 40px;
 }
-
-
-/* SERVICE */
-
-.section--service {
-    padding-top: 90px;
-}
-
-
-
-/* ECOSYSTEM */
-
-.minerva-text .texts h2 {
-    font-size: 21px;
-}
-
-.minerva-text ul li {
-    margin: 10px auto;
-}
-
-.minerva-text .texts p {
-    font-size: 18px;
-}
-
 
 
 /* TOKEN */
 
+
 .chartBox {
-    width: 380px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    width: 680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.details-group {
-    margin: 20px auto;
-}
-
-.hiddenbox {
-    top: -525px;
-    height: 60px;
-}
-
-
-/* ROADMAP */
-
-.section--roadmap {
-    height: 1250px;
-}
-
-.section--roadmap .summary {
-    margin-bottom: 70px;
-}
-
-.roadmap-list {
-    display: inline-block;
-}
-
-.left-group {
-    width: 35%;
-}
-
-.roadmap-left {
-    padding-left: 40px;
-    float: none;
-}
-
-.roadmap-wrapper h2 {
-    display: block;
-}
-
-.roadmap-left span {
-    margin-left: 0;
-}
-
-.roadmap-left .roadmap-circle {
-    top: -30px;
-    right: 30px;
-    width: 24px;
-    height: 24px;
-    float: none;
-    position: relative;
-}
-
-.right-group {
-    padding-left: 20px;
-    position: relative;
-    top: -30px;
-}
-
-.roadmap-right {
-    padding-left: 20px;
-}
-
-.text-group {
-    padding: 20px 0;
-}
-
-
-.roadmap-list:nth-child(2) {
-    position: relative;
-    top: -60px;
-}
-
-.roadmap-list:nth-child(3) {
-    position: relative;
-    top: -150px;
-}
-
-.roadmap-list:nth-child(4) {
-    position: relative;
-    top: -200px;
-}
-
-.roadmap-right.lastroadmap {
-    border-left: none;
-}
-
-.lastroadmap h2 {
-    font-size: 35px;
+#chartdiv {
+    width: 100vw;
+    height: 400px;
 }
 
 
 /* TEAM */
 
-.content-box li img {
-    display: block;
-    margin-bottom: 15px;
-    width: 150px;
+.content-box li {
+    width: 100%;
 }
 
-.content-box li strong {
-    font-size: 20px;
+.text-group {
+    max-width: 100%;
 }
 
-.content-box li p {
-    width: 160px;
+.right-group {
+    width: 70%;
 }
 
-
-
-/* PARTNER */
-
-.partner-logos img {
-    width: 35vw;
+.roadmap-list {
+    margin-left: 10%;
 }
 
 
+/* BTN */
 
-/* NEWS */
-
-.newsslide img {
-    width: 100vw;
-}
-
-.swiper-slide p {
-    width: 90vw;
-    font-size: 19px;
+.scrolltop {
+    bottom: 15px;
+    right: 15px;
 }
