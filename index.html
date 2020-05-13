@@ -46,20 +46,22 @@
     <link rel="stylesheet" type="text/css" media="all and (max-width: 768px)" href="css/main_small.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width: 480px)" href="css/main_xsmall.css">
 
+
+    <script src="https://rawgit.com/wilddeer/stickyfill/master/dist/stickyfill.min.js"></script>
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.0/Chart.min.js"></script>
+
 </head>
 
 <body>
     <div class="body-container">
 
         <!-- HEADER -->
-        <header class="header">
+        <header id="stickyId" class="header">
             <div class="header-inner">
 
                 <nav class="header-nav">
@@ -117,12 +119,12 @@
 
             <div class="summary">
                 <h2 class="summary__title">About Metis</h2>
-                <p class="summary__content">
+                <div class="summary__content">
                     메티스는 블록체인 기반 에듀테크 플랫폼입니다. <br /><br />
                     E-Learning을 뛰어 넘어 인공지능과 장기기억 학습 프로세스를 도입한 마이풀을 서비스하고
                     있으며, <br class="br-show" /><br class="br-show" />
                     전 세계 사람들은 언제 어디에서나 MTS 토큰으로 서비스를 구독하고 학습 리워드를 받을 수 있습니다.
-                </p>
+                </div>
                 <div class="about-img">
                     <img src="img-src/About.svg" alt="about">
                 </div>
@@ -545,10 +547,10 @@
             <div class="summary">
                 <h2 class="summary__title">Partner</h2>
                 <div class="partner-logos">
-                    <img src="img-src/ekyss_logo.svg" alt="metis">
-                    <img src="img-src/onestore_logo.svg" alt="saltlux">
-                    <img src="img-src/symverse_logo.svg" alt="symverse">
-                    <img src="img-src/liveen_logo.svg" alt="liveen">
+                    <img src="img-src/partner_ekyss.png" alt="metis">
+                    <img src="img-src/partner_onestore.png" alt="saltlux">
+                    <img src="img-src/partner_sysmverse.png" alt="symverse">
+                    <img src="img-src/partner_liveen.png" alt="liveen">
                 </div>
 
             </div>
@@ -566,7 +568,7 @@
                     <div class="swiper-wrapper">
                     </div>
 
-                    <div class="swiper-pagination pagination-hidden"></div>
+                    <div class="swiper-pagination"></div>
 
                     <div class="swiper-button-next button-hidden"></div>
                     <div class="swiper-button-prev button-hidden"></div>
@@ -634,12 +636,9 @@
         </div>
     </footer>
 
-    <script type="module" src="src/throttle.js"></script>
-    <script type="module" src="src/changeLang.js"></script>
-    <script type="module" src="src/toggleNav.js"></script>
-    <script type="module" src="src/showScrollBtn.js"></script>
-    <script type="module" src="src/printTokenChart.js"></script>
-    <script type="module" src="src/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="./dist/js/bundle.js"></script>
+
 </body>
 
 </html>

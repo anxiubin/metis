@@ -1,4 +1,37 @@
+import "@babel/polyfill";
 import {throttle} from './throttle.js';
+
+// // position: sticky 속성 IE 적용
+const element = document.getElementById('stickyId'); 
+Stickyfill.add(element);
+
+
+//change language
+
+const chooseBtn = document.querySelector('.header-btn.lang');
+const langList = document.querySelector('.lang-list');
+
+function showLangList() {
+    if(langList.classList.contains('show-flex')) {
+        langList.classList.remove('show-flex');
+    } else {
+        langList.classList.add('show-flex');
+    }
+}
+
+function changeLang() {
+    chooseBtn.innerText = event.target.innerText;
+    langList.classList.remove('show-flex');
+}
+
+langList.addEventListener('click', changeLang);
+chooseBtn.addEventListener('click', showLangList);
+
+
+
+// print Token chanrt
+
+
 
 const tokenData = [ {
     "target": "Team",
@@ -139,15 +172,17 @@ const chartBoxEl = document.querySelector('.chartBox');
 let checkNum = 0;
 
 function scrollView() { 
-    const chartIntAt = (window.scrollY + window.innerHeight) - chartBoxEl.offsetHeight / 10;
+    const chartIntAt = (window.pageYOffset + window.innerHeight) - chartBoxEl.offsetHeight / 10;
     const chartBottom = chartBoxEl.offsetTop + chartBoxEl.offsetHeight; 
     const isHalfShown = chartIntAt > chartBoxEl.offsetTop; 
-    const isNotScrolledPast = window.scrollY < chartBottom; 
+    const isNotScrolledPast = window.pageYOffset < chartBottom; 
 
     // view chart
     if (isHalfShown && isNotScrolledPast) { 
         checkNum += 1;
+        console.log(checkNum);
         if (checkNum === 1) {
+            console.log(checkNum);
             am4core.ready(printGraph); 
         }
     }
@@ -155,3 +190,125 @@ function scrollView() {
 }
 
 window.addEventListener('scroll', throttle(scrollView, 500));
+
+
+
+
+// show scroll button
+
+const scrolltopBtn = document.querySelector('.scrolltop');
+
+function showScrollBtn() { 
+    if(window.pageYOffset !== 0) {
+        scrolltopBtn.classList.add('show');
+    } else {
+        scrolltopBtn.classList.remove('show');
+    }
+}
+
+window.addEventListener('scroll', throttle(showScrollBtn, 1000));
+
+
+
+
+// swiper
+
+import {news} from './news.js';
+
+const newsSwiper = new Swiper('.swiper-container', {
+    // Default parameters
+    slidesPerView: 1,
+    // Responsive breakpoints
+    breakpoints: {
+        // window width >= 1024px
+        1024: {
+        slidesPerView: 2,
+        }
+    },
+    direction: 'horizontal',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+    lazy: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+
+function getNews() {
+
+    for(let i = 0; i < news.length; i++) {
+        const slideEl = document.createElement('div');
+        const linkEl = document.createElement('a');
+        const imgEl = document.createElement('img');
+        const textEl = document.createElement('p');
+
+        slideEl.classList.add('swiper-slide');
+        slideEl.classList.add('newsslide');
+        linkEl.href = news[i].link;
+        linkEl.target = "_blank";
+        imgEl.setAttribute('src', news[i].img);
+        imgEl.classList.add('swiper-lazy');
+        textEl.innerText = news[i].text;
+
+        linkEl.appendChild(imgEl);
+        slideEl.appendChild(linkEl);
+        slideEl.appendChild(textEl);
+
+        newsSwiper.appendSlide(slideEl);
+    }
+}
+
+getNews();
+
+
+
+// App swiper
+
+const appSwiper = new Swiper('.swiper-container-appslide', {
+    centeredSlides: true,
+    autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    },
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+});
+
+
+
+// toggle navigation
+
+const toggleEl = document.querySelector('.toggle')
+const toggleBtn = document.getElementById('toggle-btn');
+const navMenus = document.querySelectorAll('.nav-menu a');
+
+function toggleNav() {
+    toggleEl.classList.toggle('on');
+}
+
+function hideToggleEl() {
+    toggleEl.classList.remove('on');
+}
+
+function init() {
+    toggleBtn.addEventListener('click', toggleNav);
+
+    window.addEventListener('resize', throttle(function() {
+        if(window.innerWidth > 1024) {
+            hideToggleEl();
+        }}, 1000)
+    );
+    
+    navMenus.forEach(list => {
+        list.addEventListener('click', hideToggleEl);
+    })
+}
+
+init();
