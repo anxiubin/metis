@@ -604,7 +604,7 @@ button {
     color: #313171;
 }
 
-.minerva-text .texts p {
+.minerva-text .texts div {
     font-family: 'KoPub Dotum';
     font-weight: 300;
     font-size: 16px;
@@ -1021,13 +1021,13 @@ button {
     height: 300px;
 }
 
-.swiper-slide p {
+.swiper-slide div {
     width: 400px;
     font-family: 'KoPub Dotum';
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
-    text-align: justify;
+    text-align: center;
     padding-top: 10px;
 }
 

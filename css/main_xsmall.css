@@ -9,6 +9,14 @@
 }
 
 
+/* ECOSYSTEM */
+
+.minerva-text .texts div {
+    width: 60vw;
+}
+
+
+
 /* TOKEN */
 
 
@@ -45,9 +53,31 @@
     width: 70%;
 }
 
+
+/* ROADMAP */
+
 .roadmap-list {
     margin-left: 10%;
 }
+
+
+
+/* NEWS */
+
+
+.swiper-container {
+    width: 90vw;
+}
+
+.newsslide img {
+    width: 90vw;
+    height: calc(90vw * 0.8);
+}
+
+.swiper-slide div {
+    width: 90vw;
+}
+
 
 
 /* BTN */
