@@ -10510,7 +10510,7 @@ function getNews() {
     var slideEl = document.createElement('div');
     var linkEl = document.createElement('a');
     var imgEl = document.createElement('img');
-    var textEl = document.createElement('p');
+    var textEl = document.createElement('div');
     slideEl.classList.add('swiper-slide');
     slideEl.classList.add('newsslide');
     linkEl.href = _news_js__WEBPACK_IMPORTED_MODULE_2__["news"][i].link;

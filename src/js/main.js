@@ -286,7 +286,7 @@ function getNews() {
         const slideEl = document.createElement('div');
         const linkEl = document.createElement('a');
         const imgEl = document.createElement('img');
-        const textEl = document.createElement('p');
+        const textEl = document.createElement('div');
 
         slideEl.classList.add('swiper-slide');
         slideEl.classList.add('newsslide');
