@@ -217,17 +217,18 @@ button {
     width: 100px;
     margin: 42px 0;
     background: #fff;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     z-index: 999;
     top: 0;
     left: 5px;
+    visibility: hidden;
 }
 
-.show-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.visible {
+    visibility: visible;
 }
 
 .lang-list a {
@@ -1031,17 +1032,6 @@ button {
 }
 
 
-.swiper-button-next {
-    right: 0px;
-    color: #787878;
-    top: 150px;
-}
-
-.swiper-button-prev {
-    left: 0px;
-    color: #787878;
-    top: 150px;
-}
 
 
 /* FOOTER */

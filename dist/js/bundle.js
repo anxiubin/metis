@@ -10264,29 +10264,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _throttle_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./throttle.js */ "./src/js/throttle.js");
 /* harmony import */ var _news_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./news.js */ "./src/js/news.js");
 
- // // position: sticky 속성 IE 적용
+ // position: sticky 속성 IE 적용
 
 var element = document.getElementById('stickyId');
-Stickyfill.add(element); //change language
+Stickyfill.add(element); // 팝업 외부 영역 클릭 시 모달 닫기
+
+window.onclick = function (e) {
+  if (e.target !== chooseBtn) {
+    langList.classList.remove('visible');
+  }
+
+  if (e.target !== toggleBtn) {
+    toggleEl.classList.remove('on');
+  }
+}; //change language
+
 
 var chooseBtn = document.querySelector('.header-btn.lang');
 var langList = document.querySelector('.lang-list');
 
 function showLangList() {
-  if (langList.classList.contains('show-flex')) {
-    langList.classList.remove('show-flex');
+  if (langList.classList.contains('visible')) {
+    langList.classList.remove('visible');
   } else {
-    langList.classList.add('show-flex');
+    langList.classList.add('visible');
   }
 }
 
 function changeLang() {
   chooseBtn.innerText = event.target.innerText;
-  langList.classList.remove('show-flex');
+  langList.classList.remove('visible');
 }
 
 langList.addEventListener('click', changeLang);
-chooseBtn.addEventListener('click', showLangList); // print Token chanrt
+chooseBtn.addEventListener('click', showLangList); // toggle navigation
+
+var toggleEl = document.querySelector('.toggle');
+var toggleBtn = document.getElementById('toggle-btn');
+var navMenus = document.querySelectorAll('.nav-menu a');
+
+function toggleNav(e) {
+  toggleEl.classList.toggle('on');
+}
+
+function hideToggleEl(e) {
+  toggleEl.classList.remove('on');
+}
+
+function init() {
+  toggleBtn.addEventListener('click', toggleNav);
+  window.addEventListener('resize', Object(_throttle_js__WEBPACK_IMPORTED_MODULE_1__["throttle"])(function () {
+    if (window.innerWidth > 1024) {
+      hideToggleEl();
+    }
+  }, 1000));
+  navMenus.forEach(function (list) {
+    list.addEventListener('click', hideToggleEl);
+  });
+}
+
+init(); // print Token chanrt
 
 var tokenData = [{
   "target": "Team",
@@ -10457,16 +10494,14 @@ var newsSwiper = new Swiper('.swiper-container', {
       slidesPerView: 2
     }
   },
-  direction: 'horizontal',
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  loop: true,
-  lazy: true,
+  spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
   }
 });
 
@@ -10502,33 +10537,7 @@ var appSwiper = new Swiper('.swiper-container-appslide', {
     el: '.swiper-pagination',
     clickable: true
   }
-}); // toggle navigation
-
-var toggleEl = document.querySelector('.toggle');
-var toggleBtn = document.getElementById('toggle-btn');
-var navMenus = document.querySelectorAll('.nav-menu a');
-
-function toggleNav() {
-  toggleEl.classList.toggle('on');
-}
-
-function hideToggleEl() {
-  toggleEl.classList.remove('on');
-}
-
-function init() {
-  toggleBtn.addEventListener('click', toggleNav);
-  window.addEventListener('resize', Object(_throttle_js__WEBPACK_IMPORTED_MODULE_1__["throttle"])(function () {
-    if (window.innerWidth > 1024) {
-      hideToggleEl();
-    }
-  }, 1000));
-  navMenus.forEach(function (list) {
-    list.addEventListener('click', hideToggleEl);
-  });
-}
-
-init();
+});
 
 /***/ }),
 

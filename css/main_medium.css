@@ -2,13 +2,13 @@
 
 
 header .toggle {
-    display: none;
+    visibility: hidden;
 }
 
 header .toggle.on {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    visibility: visible;
 }
 
 #toggle-btn {
@@ -99,10 +99,6 @@ header .toggle.on {
     width: 70%;
     margin-bottom: 1rem;
 }
-
-.header-btn.lang {}
-
-.lang-list {}
 
 
 
