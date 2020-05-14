@@ -10457,16 +10457,14 @@ var newsSwiper = new Swiper('.swiper-container', {
       slidesPerView: 2
     }
   },
-  direction: 'horizontal',
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  loop: true,
-  lazy: true,
+  spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
   }
 });
 
