@@ -1,9 +1,21 @@
 import "@babel/polyfill";
 import {throttle} from './throttle.js';
 
-// // position: sticky 속성 IE 적용
+// position: sticky 속성 IE 적용
 const element = document.getElementById('stickyId'); 
 Stickyfill.add(element);
+
+
+// 팝업 외부 영역 클릭 시 모달 닫기
+
+window.onclick = function(e) {
+    if(e.target !== chooseBtn) {
+        langList.classList.remove('visible');
+    }
+    if(e.target !== toggleBtn) {
+        toggleEl.classList.remove('on');
+    } 
+}
 
 
 //change language
@@ -12,16 +24,16 @@ const chooseBtn = document.querySelector('.header-btn.lang');
 const langList = document.querySelector('.lang-list');
 
 function showLangList() {
-    if(langList.classList.contains('show-flex')) {
-        langList.classList.remove('show-flex');
+    if(langList.classList.contains('visible')) {
+        langList.classList.remove('visible');
     } else {
-        langList.classList.add('show-flex');
+        langList.classList.add('visible');
     }
 }
 
 function changeLang() {
     chooseBtn.innerText = event.target.innerText;
-    langList.classList.remove('show-flex');
+    langList.classList.remove('visible');
 }
 
 langList.addEventListener('click', changeLang);
@@ -29,9 +41,38 @@ chooseBtn.addEventListener('click', showLangList);
 
 
 
+// toggle navigation
+
+const toggleEl = document.querySelector('.toggle')
+const toggleBtn = document.getElementById('toggle-btn');
+const navMenus = document.querySelectorAll('.nav-menu a');
+
+function toggleNav(e) {
+    toggleEl.classList.toggle('on');
+}
+
+function hideToggleEl(e) {
+    toggleEl.classList.remove('on');
+}
+
+function init() {
+    toggleBtn.addEventListener('click', toggleNav);
+
+    window.addEventListener('resize', throttle(function() {
+        if(window.innerWidth > 1024) {
+            hideToggleEl();
+        }}, 1000)
+    );
+    
+    navMenus.forEach(list => {
+        list.addEventListener('click', hideToggleEl);
+    })
+}
+
+init();
+
+
 // print Token chanrt
-
-
 
 const tokenData = [ {
     "target": "Team",
@@ -283,32 +324,4 @@ const appSwiper = new Swiper('.swiper-container-appslide', {
 
 
 
-// toggle navigation
 
-const toggleEl = document.querySelector('.toggle')
-const toggleBtn = document.getElementById('toggle-btn');
-const navMenus = document.querySelectorAll('.nav-menu a');
-
-function toggleNav() {
-    toggleEl.classList.toggle('on');
-}
-
-function hideToggleEl() {
-    toggleEl.classList.remove('on');
-}
-
-function init() {
-    toggleBtn.addEventListener('click', toggleNav);
-
-    window.addEventListener('resize', throttle(function() {
-        if(window.innerWidth > 1024) {
-            hideToggleEl();
-        }}, 1000)
-    );
-    
-    navMenus.forEach(list => {
-        list.addEventListener('click', hideToggleEl);
-    })
-}
-
-init();
